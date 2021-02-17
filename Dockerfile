@@ -20,6 +20,6 @@ RUN apt-get update && \
     chmod +x worhp_1.14-0~ubuntu2004.deb && \
     apt-get install -y ./worhp_1.14-0~ubuntu2004.deb
 RUN pip3 install numpy==1.19.4 scipy==1.5.4 matplotlib==3.3.2 svgutils==0.3.2
-RUN wget -q -O topas https://seafile.zfn.uni-bremen.de/f/49fb56625c894dc0b1f6/?dl=1 && \
-    chmod +x topas
+RUN wget -q -O measurementInfluenceAnalyzer https://seafile.zfn.uni-bremen.de/f/49fb56625c894dc0b1f6/?dl=1 && \
+    chmod +x measurementInfluenceAnalyzer
 ENV PATH=$PATH:$PWD/
